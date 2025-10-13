@@ -1,11 +1,12 @@
 *{
     margin: 0;padding: 0;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ box-sizing: border-box;
 }
 body{
     height: 100%;
     width: 100%;
-    background-color: rgb(219, 217, 199);
+    background-color: rgb(255, 255, 255);
 }
 .palestine{
     background-color: black;
@@ -20,6 +21,10 @@ body{
     height: 3px;
     width: 100%;
     display: flex;
+}
+.nav-bg-container{
+    height: 40%;
+    background-color: rgb(223, 222, 213);
 }
 .nav-container{
     height: auto;
@@ -38,17 +43,18 @@ body{
     height: auto;
 }
 .nav-options-align{
-    height: 26px;
+    height :auto;
     width: auto;
 }
 .nav-options-align a{
     color: #003366;
     text-decoration: none;
-    padding: 10px;
+    padding: 4px 10px 6px 10px;
     font-weight: 600;
+    border-radius: 5px;
 }
 .nav-options-align a:hover{
-    background-color: antiquewhite;
+    background-color:  rgb(227, 203, 172);
 }
 .nav-input{
     height: 30px;
@@ -58,18 +64,19 @@ body{
     position: absolute;
     top: 30%;
     left: 5px;
-    cursor: pointer;
     font-size: 16px;
 }
 .nav-input-align{
     font-size: 14px;
     font-weight: 500;
-    cursor: pointer;
     height: 30px;
     width: 120px;
     padding-left: 30px;
     border: none;
     border-radius: 15px;
+}
+.nav-input-align:hover{
+    border: 2px solid #003366;
 }
 .heading{
     height: 130px;
@@ -79,21 +86,173 @@ body{
     align-items: end;
 }
 .heading h1{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 300;
+    color: #2f2f2f8f;
+}
+
+.section-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #737373b2;
+    font-weight: 300;
+    padding: 20px;
+}
+.section-img{
+    width: 50%;
+}
+.section-text{
+    width: 45%;
+    font-size: 20px;
+}
+
+.menu-container{
+    height: auto;
+    width: 100%;
+    background-color: rgb(157, 8, 105);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+    align-items: center;
+}
+.menu-container a{
+    color: white;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    color: rgba(58, 58, 58, 0.685);
+    justify-content: center;
+    gap: 34px;
+    margin-top: 30px;
+}
+.feature-container{
+    margin: 10px;
+}
+.feature-head{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.feature-para{
+    font-size: 14px;
+    font-weight: 500;
+}
+.feature-para a{
+    color: #003366;
+    font-weight: 500;
+}
+.footer-container{
+    display: flex;
+    padding: 40px;
+    height: auto;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    flex-shrink: 1;
+}
+.footer-right{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    width: 35%;
+   
+}
+.footer-links{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.footer-links a{
+    color: #011f01;
+}
+.footer-btn-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 40px;
+    width: 160px;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    background-color: rgb(213, 213, 213);
+
+}
+.footer-btn-2{
+height: 50px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+.footer-btn-2 img{
+    height: 50px;
+    width: 130px;
 }
 
 @media(max-width:890px){
     .nav-container{
     flex-direction: column;
     align-items: flex-start;
+    gap:30px;
     }
+    .footer-links{
+        flex-direction: column;
+    }
+    .footer-container{
+    flex-direction: column;
+    }
+    
 }
-
 
 @media(max-width:780px){
     .nav-options{
     flex-direction: column;
     align-items: flex-start;
 }
+.heading h1{
+    font-size: 40px;
+}
+.nav-input-align{
+    width: 90vw;
+}
+.nav-bg-container{
+    padding: 15px 0px 0px 16px;
+}
+.section-container{
+    flex-direction: column;
+}
+.section-img{
+    width: 100%;
+}
+.section-text{
+    width: 100%;
+    
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.menu-container{
+    flex-direction: column;
+    gap: 5px;
+}
+.main-container{
+    grid-template-columns: 45% 45% ;
+    gap: 10px 34px;
+    
+}
+.footer-links{
+    flex-direction: column;
+    gap: 5px;
+}
+
 }
