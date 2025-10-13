@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(219, 217, 199);
+}
+.palestine{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-bottom{
+    height: 3px;
+    width: 100%;
+    display: flex;
+}
+.nav-container{
+    height: auto;
+    width: 96%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-align{
+    height: 80px;
+}
+.nav-options{
+    display: flex;
+    gap: 20px;
+    height: auto;
+}
+.nav-options-align{
+    height: 26px;
+    width: auto;
+}
+.nav-options-align a{
+    color: #003366;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+.nav-options-align a:hover{
+    background-color: antiquewhite;
+}
+.nav-input{
+    height: 30px;
+    position: relative;
+}
+.nav-fontawsome-align{
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.nav-input-align{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 15px;
+}
+.heading{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.heading h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+@media(max-width:890px){
+    .nav-container{
+    flex-direction: column;
+    align-items: flex-start;
+    }
+}
+
+
+@media(max-width:780px){
+    .nav-options{
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
